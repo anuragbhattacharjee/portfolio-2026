@@ -234,6 +234,7 @@ a:focus-visible {
   justify-content: space-between;
   align-items: end;
   gap: 24px;
+  margin-top: clamp(17px, 4vw, 24px);
   margin-bottom: 17px;
 }
 
@@ -312,7 +313,7 @@ a:focus-visible {
 .site-footer {
   display: flex;
   justify-content: space-between;
-  padding-block: 2rem;
+  padding-top: 2rem;
   border-top: 1px solid var(--color-border);
   color: var(--color-muted);
   font-size: 0.7rem;
@@ -739,5 +740,47 @@ a:focus-visible {
 
   .cp-project {
     transition: none;
+  }
+}
+
+.cp-experience {
+  margin-top: 56px;
+}
+
+.cp-experience-list {
+  border-top: 1px solid var(--cp-line);
+}
+
+.cp-experience-row {
+  display: grid;
+  grid-template-columns: 150px 220px 1fr;
+  gap: 28px;
+
+  padding: 24px 0;
+
+  border-bottom: 1px solid var(--cp-line);
+}
+
+.cp-experience-row h3 {
+  margin: 0 0 4px;
+
+  font: 500 20px / 1.15 "Newsreader", serif;
+}
+
+.cp-experience-role {
+  margin: 0;
+
+  color: var(--cp-soft);
+  font-size: 10px;
+}
+
+.cp-experience-row .cp-body {
+  max-width: 560px;
+}
+
+@media (max-width: 720px) {
+  .cp-experience-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 }
