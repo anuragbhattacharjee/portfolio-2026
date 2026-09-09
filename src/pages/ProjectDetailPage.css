@@ -1,0 +1,138 @@
+.cp-case-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.cp-case-image {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  margin-bottom: 28px;
+  object-fit: cover;
+  background: var(--cp-panel);
+  border: 1px solid var(--cp-line);
+  border-radius: var(--cp-radius);
+}
+
+.cp-case-meta {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--cp-line);
+  border-bottom: 1px solid var(--cp-line);
+}
+
+.cp-case-meta div {
+  padding: 16px 14px 16px 0;
+}
+
+.cp-case-meta div + div {
+  padding-left: 17px;
+  border-left: 1px solid var(--cp-line);
+}
+
+.cp-case-meta span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--cp-soft);
+  font: 400 8px "DM Mono", monospace;
+  text-transform: uppercase;
+}
+
+.cp-case-meta b {
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.cp-case-layout {
+  display: grid;
+  grid-template-columns: 0.42fr 1fr;
+  gap: 48px;
+  padding-top: 44px;
+}
+
+.cp-case-index {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  font-size: 10px;
+}
+
+.cp-case-index a {
+  color: var(--cp-soft);
+}
+
+.cp-case-index a:first-child {
+  color: var(--cp-accent);
+}
+
+.cp-case-section {
+  padding-bottom: 38px;
+  margin-bottom: 38px;
+  border-bottom: 1px solid var(--cp-line);
+  scroll-margin-top: 24px;
+}
+
+.cp-case-section:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.cp-case-section h2,
+.cp-case-section h3 {
+  margin-bottom: 14px;
+}
+
+.cp-case-section .cp-body + .cp-body {
+  margin-top: 12px;
+}
+
+.cp-responsibilities {
+  padding: 0;
+  margin: 18px 0 0;
+  list-style: none;
+}
+
+.cp-responsibilities li {
+  display: grid;
+  grid-template-columns: 22px 1fr;
+  gap: 8px;
+  padding: 9px 0;
+  color: var(--cp-soft);
+  font-size: 11px;
+  line-height: 1.55;
+  border-top: 1px solid var(--cp-line);
+}
+
+.cp-responsibilities span {
+  color: var(--cp-accent);
+  font: 400 9px "DM Mono", monospace;
+}
+
+@media (max-width: 720px) {
+  .cp-case-layout {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .cp-case-meta {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cp-case-meta div:nth-child(3) {
+    border-top: 1px solid var(--cp-line);
+    border-left: 0;
+  }
+
+  .cp-case-meta div:nth-child(4) {
+    border-top: 1px solid var(--cp-line);
+  }
+
+  .cp-case-index {
+    display: none;
+  }
+}

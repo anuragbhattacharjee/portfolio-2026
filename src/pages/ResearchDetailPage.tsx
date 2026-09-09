@@ -1,6 +1,8 @@
 import { Link, useParams } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 import { researchItems } from "../data/researches";
+import "./DetailPageLayout.css";
+import "./ResearchDetailPage.css";
 
 function ResearchDetailPage() {
   const { slug } = useParams();
@@ -13,7 +15,7 @@ function ResearchDetailPage() {
     return (
       <main>
         <h1>Research not found</h1>
-        <Link to="/research">Back to research</Link>
+        <Link to="/researches">Back to research</Link>
       </main>
     );
   }
@@ -23,12 +25,12 @@ function ResearchDetailPage() {
       <Breadcrumb
         items={[
           { label: "Home", to: "/" },
-          { label: "Research", to: "/research" },
+          { label: "Research", to: "/researches" },
           { label: research.title },
         ]}
       />
 
-      <header className="cp-research-hero">
+      <header className="cp-detail-hero">
         <div>
           <div className="cp-kicker">
             {research.kicker}
@@ -39,10 +41,28 @@ function ResearchDetailPage() {
           </h1>
         </div>
 
-        <p className="cp-body">
-          {research.description}
-        </p>
+        <div className="cp-detail-summary">
+          <p className="cp-body">
+            {research.description}
+          </p>
+        </div>
       </header>
+
+      {research.image && research.imageAlt && (
+        <figure className="cp-research-architecture">
+          <a
+            href={research.image}
+            target="_blank"
+            rel="noreferrer"
+            aria-label={`Open the full-size ${research.title} architecture`}
+          >
+            <img src={research.image} alt={research.imageAlt} />
+          </a>
+          {research.imageCaption && (
+            <figcaption>{research.imageCaption}</figcaption>
+          )}
+        </figure>
+      )}
 
       <section className="cp-research-layout">
         <div className="cp-research-panel">
@@ -88,6 +108,20 @@ function ResearchDetailPage() {
           <div className="cp-honesty">
             <h3>How it connects to current work</h3>
             <p>{research.connection}</p>
+          </div>
+
+          <div className="cp-research-links">
+            {research.links.map((link) => (
+              <a
+                className="cp-mono"
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noreferrer"
+              >
+                {link.label} ↗
+              </a>
+            ))}
           </div>
         </div>
       </section>

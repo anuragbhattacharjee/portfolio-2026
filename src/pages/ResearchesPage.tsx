@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 import { researchItems } from "../data/researches";
+import "./PageLayout.css";
 
 function ResearchesPage() {
   return (
@@ -27,10 +28,10 @@ function ResearchesPage() {
         </p>
       </header>
 
-      <section className="cp-work-list">
+      <section className="cp-index-list">
         {researchItems.map((research, index) => (
           <Link
-            className="cp-work-row"
+            className="cp-index-row"
             key={research.slug}
             to={`/research/${research.slug}`}
           >
@@ -50,11 +51,11 @@ function ResearchesPage() {
               </div>
             </div>
 
-            <div className="cp-work-evidence">
+            <div className="cp-index-evidence">
               {research.description}
             </div>
 
-            <span className="cp-work-arrow">↗</span>
+            <span className="cp-index-arrow" aria-hidden="true">↗</span>
           </Link>
         ))}
       </section>

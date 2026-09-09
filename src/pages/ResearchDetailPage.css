@@ -1,0 +1,128 @@
+.cp-research-architecture {
+  margin: 0 0 14px;
+  padding: 14px;
+  background: var(--cp-panel);
+  border: 1px solid var(--cp-line);
+  border-radius: var(--cp-radius);
+}
+
+.cp-research-architecture a,
+.cp-research-architecture img {
+  display: block;
+  width: 100%;
+}
+
+.cp-research-architecture img {
+  height: auto;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.cp-research-architecture figcaption {
+  margin: 10px 3px 0;
+  color: var(--cp-soft);
+  font: 400 9px / 1.5 "DM Mono", monospace;
+}
+
+.cp-research-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.cp-research-panel {
+  padding: 24px;
+  background: var(--cp-panel);
+  border-radius: var(--cp-radius);
+}
+
+.cp-research-panel h2,
+.cp-research-panel h3 {
+  margin-bottom: 14px;
+}
+
+.cp-research-panel .cp-body {
+  font-size: 11px;
+}
+
+.cp-model-flow {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.cp-model-node {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--cp-bg);
+  border: 1px solid var(--cp-line);
+  border-radius: 10px;
+  font: 400 9px "DM Mono", monospace;
+}
+
+.cp-model-node span {
+  color: var(--cp-soft);
+}
+
+.cp-result {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid var(--cp-line);
+}
+
+.cp-result b {
+  display: block;
+  margin-bottom: 5px;
+  font: 500 24px "Newsreader", serif;
+}
+
+.cp-result span {
+  display: block;
+  color: var(--cp-soft);
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+.cp-honesty {
+  margin-top: 14px;
+  padding-top: 16px;
+  border-top: 1px solid var(--cp-line);
+}
+
+.cp-honesty h3,
+.cp-honesty h4 {
+  margin: 0 0 8px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.cp-honesty p {
+  margin: 0;
+  color: var(--cp-soft);
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.cp-research-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--cp-line);
+}
+
+.cp-research-links a:hover {
+  color: var(--cp-accent);
+}
+
+@media (max-width: 720px) {
+  .cp-research-layout {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+}

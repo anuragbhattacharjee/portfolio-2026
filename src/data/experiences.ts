@@ -7,28 +7,28 @@ type Experience = {
 
 export const experiences: Experience[] = [
   {
-    period: "2023 — 2026",
+    period: "Aug 2023 — Jun 2026",
     company: "Execulink Telecom",
     role: "Full Stack Developer",
     summary:
-      "Built and modernized internal and customer-facing systems across telecom operations, including Django/React modernization, DNS tooling and workflow automation.",
+      "Worked across Execulink's telecom platforms, maintaining existing Perl and MySQL systems, contributing to a Django and React modernization foundation, and building operational tools for DNS management, provisioning, monitoring and reporting.",
   },
   {
-    period: "2018 — 2021",
+    period: "Sep 2018 — Aug 2021",
     company: "Webable Digital",
     role: "Senior Developer",
     summary:
       "Led Python product development for conversational systems and backend services, working across research, architecture, implementation and delivery.",
   },
   {
-    period: "2015 — 2018",
+    period: "Jul 2015 — Aug 2018",
     company: "IQVIA",
     role: "Software Developer",
     summary:
       "Built analytics dashboards and reusable application frameworks using Angular and .NET for healthcare and pharmaceutical data products.",
   },
   {
-    period: "2014 — 2015",
+    period: "Dec 2014 — Apr 2015",
     company: "BRAC IT",
     role: "Software Engineer",
     summary:

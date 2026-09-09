@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import type { Research } from "../data/research";
+import type { Research } from "../data/researches";
+import "./ProjectCard.css";
 
 type ResearchCardProps = {
   research: Research;

@@ -1,8 +1,10 @@
 import { Link, useParams } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb";
 import { projects } from "../data/projects";
+import "./DetailPageLayout.css";
+import "./ProjectDetailPage.css";
 
-function WorkDetailPage() {
+function ProjectDetailPage() {
   const { slug } = useParams();
 
   const project = projects.find(
@@ -23,22 +25,59 @@ function WorkDetailPage() {
       <Breadcrumb
         items={[
             { label: "Home", to: "/" },
-            { label: "Works", to: "/works" },
+            { label: "Projects", to: "/projects" },
             { label: project.title },
         ]}
         />
 
-      <header className="cp-case-head">
-        <div className="cp-kicker">{project.kicker}</div>
+      <header className="cp-detail-hero">
+        <div>
+          <div className="cp-kicker">{project.kicker}</div>
 
-        <h1 className="cp-display">
-          {project.detail.headline}
-        </h1>
+          <h1 className="cp-display">
+            {project.detail.headline}
+          </h1>
+        </div>
 
-        <p className="cp-body">
-          {project.description}
-        </p>
+        <div className="cp-detail-summary">
+          <p className="cp-body">
+            {project.description}
+          </p>
+
+          {(project.githubUrl || project.liveUrl) && (
+            <div className="cp-case-actions">
+              {project.githubUrl && (
+                <a
+                  className="cp-github-action"
+                  href={project.githubUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span aria-hidden="true">★</span> View / star on GitHub ↗
+                </a>
+              )}
+              {project.liveUrl && (
+                <a
+                  className="cp-text-link"
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit the archived site ↗
+                </a>
+              )}
+            </div>
+          )}
+        </div>
       </header>
+
+      {project.image && project.imageAlt && (
+        <img
+          className="cp-case-image"
+          src={project.image}
+          alt={project.imageAlt}
+        />
+      )}
 
       <section className="cp-case-meta">
         <div>
@@ -54,6 +93,11 @@ function WorkDetailPage() {
         <div>
           <span>Stack</span>
           <b>{project.technologies.join(", ")}</b>
+        </div>
+
+        <div>
+          <span>Project type</span>
+          <b>{project.category === "professional" ? "Professional" : "Personal"}</b>
         </div>
       </section>
 
@@ -117,4 +161,4 @@ function WorkDetailPage() {
   );
 }
 
-export default WorkDetailPage;
+export default ProjectDetailPage;

@@ -1,0 +1,76 @@
+.cp-page-intro {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 42px;
+  align-items: end;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--cp-line);
+}
+
+.cp-page-intro .cp-body {
+  max-width: 390px;
+}
+
+.cp-index-list {
+  margin-top: 16px;
+}
+
+.cp-index-row {
+  display: grid;
+  grid-template-columns: 34px minmax(210px, 0.7fr) minmax(260px, 1fr) 18px;
+  gap: 20px;
+  align-items: start;
+  padding: 22px 4px;
+  color: var(--cp-ink);
+  border-bottom: 1px solid var(--cp-line);
+}
+
+.cp-index-row:hover h2,
+.cp-index-row:hover h3 {
+  color: var(--cp-accent);
+}
+
+.cp-index-row h2,
+.cp-index-row h3 {
+  margin: 0 0 7px;
+  font: 500 20px / 1.15 "Newsreader", serif;
+}
+
+.cp-index-row p {
+  margin: 0;
+  color: var(--cp-soft);
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.cp-index-evidence {
+  color: var(--cp-soft);
+  font-size: 10px;
+  line-height: 1.55;
+}
+
+.cp-index-evidence b {
+  color: var(--cp-ink);
+  font-weight: 500;
+}
+
+@media (max-width: 720px) {
+  .cp-page-intro {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .cp-index-row {
+    grid-template-columns: 34px 1fr 18px;
+    gap: 12px;
+  }
+
+  .cp-index-evidence {
+    grid-column: 2;
+  }
+
+  .cp-index-row .cp-index-arrow {
+    grid-row: 1;
+    grid-column: 3;
+  }
+}
