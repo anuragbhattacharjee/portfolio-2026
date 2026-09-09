@@ -82,10 +82,10 @@ function App() {
         <div className="site-footer-meta">
           <a
             className="site-footer-archive"
-            href="https://github.com/anuragbhattacharjee/my-potfolio"
+            href="/previous-portfolio/"
             target="_blank"
             rel="noreferrer"
-            aria-label="Previous portfolio design source archive on GitHub"
+            aria-label="Open Anurag Bhattacharjee's previous portfolio design"
           >
             Previous portfolio design ↗
           </a>

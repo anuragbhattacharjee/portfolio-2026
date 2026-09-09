@@ -5,6 +5,25 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anurag Bhattacharjee</title>
+    <script>
+      (function (location) {
+        if (location.search.startsWith("?/")) {
+          const restoredPath = location.search
+            .slice(1)
+            .split("&")
+            .map(function (part) {
+              return part.replace(/~and~/g, "&");
+            })
+            .join("?");
+
+          window.history.replaceState(
+            null,
+            "",
+            restoredPath + location.hash,
+          );
+        }
+      })(window.location);
+    </script>
   </head>
   <body>
     <div id="root" class="cp-site"></div>
