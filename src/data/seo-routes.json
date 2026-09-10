@@ -1,0 +1,104 @@
+[
+  {
+    "path": "/",
+    "title": "Anurag Bhattacharjee | Senior Full Stack Software Engineer",
+    "description": "Senior full stack software engineer in Canada with 10+ years of experience across Python, Django, React, TypeScript, APIs, telecom systems and applied AI.",
+    "kind": "profile",
+    "image": "site"
+  },
+  {
+    "path": "/projects",
+    "title": "Software Engineering Projects | Anurag Bhattacharjee",
+    "description": "Case studies and personal projects spanning Python, Django, React, TypeScript, legacy telecom systems, NLP services and practical developer tools.",
+    "kind": "collection",
+    "image": "site"
+  },
+  {
+    "path": "/projects/legacy-modernization",
+    "title": "Legacy Telecom Modernization | Anurag Bhattacharjee",
+    "description": "A grounded case study of contributing to a gradual Django, React and MySQL modernization within a large 30-year-old Perl telecom platform.",
+    "kind": "project"
+  },
+  {
+    "path": "/projects/conversational-platform",
+    "title": "Customer-Support NLU Microservice | Anurag Bhattacharjee",
+    "description": "A Flask NLU service using curated multilingual datasets, TF-IDF, language rules and lightweight models to support marketplace and e-commerce chatbots.",
+    "kind": "project"
+  },
+  {
+    "path": "/projects/webpod",
+    "title": "WebPod: Distraction-Free Music Player | Anurag Bhattacharjee",
+    "description": "A focused React music player that searches YouTube and plays audio without pulling the listener into a recommendation feed.",
+    "kind": "project",
+    "imageSource": "src/assets/projects/webpod.png",
+    "imageAlt": "WebPod music player search and playback interface"
+  },
+  {
+    "path": "/projects/discord-nlp-smily-bot",
+    "title": "Deep-Learning Discord Reaction Bot | Anurag Bhattacharjee",
+    "description": "A Python Discord bot that detects sentiment, emotion and sarcasm in messages, then responds with a suitable emoji reaction.",
+    "kind": "project",
+    "imageSource": "src/assets/projects/discord-smily-bot.png",
+    "imageAlt": "Discord conversation showing the NLP bot reacting with emoji"
+  },
+  {
+    "path": "/projects/swarnanurag-wedding",
+    "title": "Interactive Wedding Invitation | Anurag Bhattacharjee",
+    "description": "A responsive wedding invitation combining event details, a countdown, personal milestones, family photographs and warm storytelling.",
+    "kind": "project",
+    "imageSource": "src/assets/projects/wedding-invitation.png",
+    "imageAlt": "SwarnAnurag wedding invitation website"
+  },
+  {
+    "path": "/projects/flask-project-skeleton",
+    "title": "Reusable Flask Project Skeleton | Anurag Bhattacharjee",
+    "description": "A reusable Python and Flask foundation shaped by the maintainability lessons of a growing NLU microservice.",
+    "kind": "project",
+    "imageSource": "src/assets/projects/flask-structure.jpg",
+    "imageAlt": "Diagram of the reusable Flask project structure"
+  },
+  {
+    "path": "/projects/react-native-boilerplate",
+    "title": "React Native Application Boilerplate | Anurag Bhattacharjee",
+    "description": "A React Native starter application with authentication flows, navigation, reusable components, SafeAreaView and flexible layouts.",
+    "kind": "project",
+    "imageSource": "src/assets/projects/react-native-boilerplate.png",
+    "imageAlt": "React Native starter application screens"
+  },
+  {
+    "path": "/projects/flask-translator",
+    "title": "Flask Translation Utility | Anurag Bhattacharjee",
+    "description": "A focused Python and Flask utility for translating lists of text into a selected language through Google's translation service.",
+    "kind": "project",
+    "imageSource": "src/assets/projects/flask-translator.jpg",
+    "imageAlt": "Flask translator interface"
+  },
+  {
+    "path": "/researches",
+    "title": "AI and NLP Research | Anurag Bhattacharjee",
+    "description": "Research in biomedical NLP, multi-label classification, Bangla speech recognition and applied AI, presented with evaluation context and limitations.",
+    "kind": "collection",
+    "image": "site"
+  },
+  {
+    "path": "/research/bert-kenmesh",
+    "title": "BERT-KenMeSH Biomedical NLP Research | Anurag Bhattacharjee",
+    "description": "Master's research combining PubMedBERT, label attention, KNN signals and graph relationships for automatic Medical Subject Headings indexing.",
+    "kind": "research",
+    "imageSource": "src/assets/research/bert-kenmesh-architecture.png",
+    "imageAlt": "BERT-KenMeSH biomedical NLP model architecture"
+  },
+  {
+    "path": "/research/bangla-speech-corpus",
+    "title": "Bangla Speech Corpus and ASR Research | Anurag Bhattacharjee",
+    "description": "A 2014 undergraduate thesis on building a Bangla speech corpus and evaluating a large-vocabulary speech-recognition baseline with CMUSphinx.",
+    "kind": "research"
+  },
+  {
+    "path": "/blogs",
+    "title": "Software and AI Blogs | Anurag Bhattacharjee",
+    "description": "Selected writing about software engineering, React, artificial intelligence, natural language processing and technology's effect on attention.",
+    "kind": "collection",
+    "image": "site"
+  }
+]

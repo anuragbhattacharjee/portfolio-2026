@@ -3,6 +3,7 @@ import { Link, NavLink, Route, Routes, useLocation } from "react-router-dom";
 
 import reactIcon from "./assets/icons/react.svg";
 import typescriptIcon from "./assets/icons/typescript.svg";
+import Seo from "./components/Seo";
 import HomePage from "./pages/HomePage";
 import ProjectsPage from "./pages/ProjectsPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
@@ -30,6 +31,7 @@ function App() {
 
   return (
     <article className="cp-page" aria-label="Anurag Bhattacharjee portfolio">
+      <Seo />
       <nav className={`cp-nav ${isScrolled ? "cp-nav-scrolled" : ""}`} aria-label="Primary navigation">
         <Link className="cp-logo" to="/" aria-label="Anurag Bhattacharjee, home">
           <img src="/favicon.ico" alt="Anurag Bhattacharjee logo" height="32" width="32" />
