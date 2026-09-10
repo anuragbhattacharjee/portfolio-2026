@@ -175,5 +175,6 @@ const sitemap = [
 ].join("\n");
 
 await writeFile(path.join(dist, "sitemap.xml"), sitemap);
+await rm(path.join(dist, ".vite"), { recursive: true, force: true });
 await rm(path.join(root, ".seo-render"), { recursive: true, force: true });
 console.log(`Prepared ${routes.length} indexable routes and sitemap.xml.`);
