@@ -74,8 +74,8 @@ export const externalProfiles: ExternalProfile[] = [
   },
   {
     name: "HackerRank",
-    description: "Programming challenges under anurag07061",
-    url: "https://www.hackerrank.com/anurag07061",
+    description: "Programming challenges under anuragon2",
+    url: "https://www.hackerrank.com/profile/anuragon2",
     icon: hackerRankIcon,
     color: "#00a86b",
   },
